@@ -1,12 +1,14 @@
 public class MethodScope {
     
-    static void showNumber(){
-
-        int number = 100 ;
-        System.out.println("Number : " + number);
-    }
     public static void main(String[] args) {
-        showNumber();
         
+        int a = 10 ;
+        if (a > 5){
+            int b = 20;
+
+            System.out.println("a = " + a);
+            System.out.println("b = " + b);
+        }
+        System.out.println("a outside if = " + a);
     }
 }
